@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Us</title>
+    <link rel = "icon" type = "image/png" href = "https://i.pinimg.com/originals/16/ce/fc/16cefcef49bfa480c8de95629d943177.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+   <style>
+    .icon-block svg {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  font-family: Nunito, sans-serif;
+}
+
+.team-cards-inner-container {
+  display: flex;
+  row-gap: 1.3rem;
+  column-gap: 1.3rem;
+}
+
+.text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  line-height: 25px;
+}
+
+.responsive-cell-block {
+  min-height: 75px;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: flex-start;
+}
+
+.inner-container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  justify-content: center;
+}
+
+.section-head {
+  font-size: 60px;
+  line-height: 70px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 24px;
+  margin-left: 0px;
+}
+
+.section-body {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 64px;
+  margin-left: 0px;
+}
+
+.team-cards-outer-container {
+  display: flex;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 0px;
+  padding-right: 25px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.img-box {
+  max-width: 130px;
+  max-height: 130px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 0px;
+  margin-right: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  box-shadow: rgba(95, 95, 95, 0.1) 6px 12px 24px;
+  flex-direction: row;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.card-container {
+  max-width: 350px;
+}
+
+.card-content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.person-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+.person-info {
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.card-container {
+  max-width: 350px;
+}
+
+.outer-container {
+  justify-content: center;
+  padding-top: 0px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+  background-color: #FAF8CD;
+}
+
+.person-img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .team-card-container {
+    justify-content: center;
+  }
+
+  .section-head {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .img-box {
+    max-width: 109px;
+    max-height: 109px;
+  }
+
+  .content-container {
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .inner-container {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner-container {
+    margin-top: 60px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+  }
+
+  .section-body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .img-box {
+    margin-top: 0px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .content-box {
+    text-align: center;
+  }
+
+  .content-container {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+
+  .card-container {
+    max-width: 45%;
+  }
+
+  .team-cards-inner-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .outer-container {
+    padding-top: 0px;
+    padding-right: 60px;
+    padding-bottom: 0px;
+    padding-left: 60px;
+  }
+
+  .section-head {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .content-box {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .section-body {
+    font-size: 12px;
+  }
+
+  .img-box {
+    max-width: 68px;
+    max-height: 68px;
+  }
+
+  .person-name {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 1px;
+    margin-left: 0px;
+  }
+
+  .content-box {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 46px;
+    margin-left: 0px;
+    text-align: left;
+  }
+
+  .content-container {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .card-container {
+    max-width: 100%;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+
+   </style>
+</head>
+<body>
+  <!-- header -->
+  <header class = "header">
+    <div class = "head-top">
+      <a class = "brand-name">
+        <span>SWIFT</span>
+        select
+      </a>
+      <div>
+        <span class="search-box">
+          <i class = "fas fa-call" style="color: white;"></i>
+          </a>
+        </span>
+        <span class = "head-icon">
+          <a style="text-decoration:none; color:#ffffff;"href="shop.html"><i class = "fas fa-home"></i></a>
+        </span>
+        <span class = "head-icon" title="Cart">
+          <a style="text-decoration:none; color:#ffffff;"href="#"><i class = "fa fa-shopping-cart"></i></a>
+        </span>
+        <span class = "head-icon" title="Login">
+          <a style="text-decoration:none; color:#ffffff;"href="log.html"><i class = "fas fa-user-circle"></i></a>
+        </span>
+      </div>
+    </div>
+  <div class="responsive-container-block outer-container">
+    <div class="responsive-container-block inner-container">
+      <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-4 wk-ipadp-5 content-container">
+        <div class="content-box">
+          <p class="text-blk section-head">
+            Swift Select
+          </p>
+          <p class="text-blk section-body">
+            Welcome to SWIFT SELECT, your ultimate destination for trendy and high-quality products delivered straight to your doorstep. We are a premier dropshipping store committed to offering a seamless shopping experience to our valued customers. At SWIFT SELECT, we believe that shopping should be easy, enjoyable, and hassle-free.
+We are committed to providing outstanding customer service and support at every step of your shopping journey. Our friendly and knowledgeable team is always ready to assist you with any questions, concerns, or product inquiries you may have. We strive to respond promptly and efficiently to ensure your complete satisfaction.
+At SWIFT SELECT, we are passionate about staying ahead of the latest trends and ensuring that our product selection reflects the evolving needs of our customers. We regularly update our inventory with exciting new products that align with emerging market demands and customer preferences. With us, you can stay on top of the latest trends and discover unique items that set you apart.
+Join us on this exciting shopping journey, where convenience, quality, and style come together seamlessly. Experience the joy of discovering new products and let us exceed your expectations with our exceptional service. Thank you for choosing SWIFT SELECT, and we look forward to serving you with the best products and shopping experience possible.
+<br>
+<br>
+<h1 style="text-align: center;">OUR TEAM</h1></p>
+        </div>
+        
+      </div>
+      <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-8 team-cards-outer-container">
+        <div class="responsive-container-block team-cards-inner-container">
+          <div class="responsive-cell-block wk-mobile-12 wk-ipadp-10 wk-tab-8 wk-desk-6 card-container">
+            <div class="card">
+              <div class="img-box">
+                <img class="person-img" src="C:\Users\prave\OneDrive\Documents\HTML\PRO\HARI.jpeg">
+              </div>
+              <div class="card-content-box">
+                <p class="text-blk person-name">
+                  HARI PRASATH M
+                </p>
+                <p class="text-blk person-info">
+                  CB.EN.U4CSE22222
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="responsive-cell-block wk-mobile-12 wk-ipadp-10 wk-tab-8 wk-desk-6 card-container">
+            <div class="card">
+              <div class="img-box">
+                <img class="person-img" src="C:\Users\prave\OneDrive\Documents\HTML\PRO\MRINENDRAA.jpeg">
+              </div>
+              <div class="card-content-box">
+                <p class="text-blk person-name">
+                  MRINENDRAA S
+                </p>
+                <p class="text-blk person-info">
+                  CB.EN.U4CSE22235
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="responsive-cell-block wk-mobile-12 wk-ipadp-10 wk-tab-8 wk-desk-6 card-container">
+            <div class="card">
+              <div class="img-box">
+                <img class="person-img" src="C:\Users\prave\OneDrive\Documents\HTML\PRO\PRAVEEN.jpeg">
+              </div>
+              <div class="card-content-box">
+                <p class="text-blk person-name">
+                  PRAVEEN K
+                </p>
+                <p class="text-blk person-info">
+                  CB.EN.U4CSE22243
+                </p>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
+  <!-- footer -->
+  <footer class = "footer container">
+    <div class = "footer-item">
+      <h2 class = "brand-name">
+        <span>SWIFT</span>Select
+      </h2>
+      <p>social media accounts</p>
+      <ul class = "footer-icons">
+        <li>
+          <a href = "#"><i class = "fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href = "#"><i class = "fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href = "#"><i class = "fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href = "#"><i class = "fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href = "#"><i class = "fab fa-google-plus-g"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class = "footer-item">
+      <h3>links</h3>
+      <ul>
+        <li><a href = "shop.html">home</a></li>
+        
+        <li><a href = "shop.html" download="SwiftSelect">download</a></li>
+        <li><a href = "abus.html">about</a></li>
+      </ul>
+    </div>
+
+    <div class = "footer-item">
+      <h3>products</h3>
+      <ul>
+        <li><a href = "tech.html">Tech</a></li>
+        <li><a href = "#">Trendy</a></li>
+        <li><a href = "#">Classic</a></li>
+        
+      </ul>
+    </div>
+
+    <div class = "footer-item">
+      <h3>support</h3>
+      <ul>
+        <li><a href = "FAQ.html">FAQ</a></li>
+       
+        <li><a href = "#">features</a></li>
+        <li><a href = "contact.html">contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- end of footer -->
+  
+</body>
+</html>

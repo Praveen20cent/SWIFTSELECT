@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us</title>
+    <link rel = "icon" type = "image/png" href = "https://i.pinimg.com/originals/16/ce/fc/16cefcef49bfa480c8de95629d943177.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Amrita Vishwa Vidyapeetham,Amritanagar</div>
+          <div class="text-two">Coimbatore - 641 112</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+91 987 654 3210</div>
+          <div class="text-two">+0422 1234 567</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">swiftselect@gmail.com</div>
+          <div class="text-two">info.swiftselect@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any types of queries related to our products, you can send us a message from here. It's our pleasure to assist you.</p>
+      <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+        <div class="input-box">
+          <input type="text" name="fname" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+          <textarea name="name" rows="8" cols="80" placeholder="Enter your message"></textarea>
+        </div>
+        <div class="button">
+          <input type="submit" value="Send Now" >
+        </div>
+        <div class="button">
+          <input type="button" value="Go Back to Home" onclick="location.href='shop.html'" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  <script>
+    function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+    alert("Name must be filled out");
+    return false;
+    }
+    var y = document.forms["myForm"]["email"].value;
+    if (y == "") {
+    alert("E-mail must be filled out");
+    return false;
+    }
+  
+}
+  </script>
+</body>
+</html>
