@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>FAQ</title>
+  <link rel = "icon" type = "image/png" href = "https://i.pinimg.com/originals/16/ce/fc/16cefcef49bfa480c8de95629d943177.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<style>
+  body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: rgba(0,0,0,.1);
+}
+
+h2 {
+  margin: 20px auto 80px;
+  font-size: 38px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+details {
+  width: 75%;
+  min-height: 5px;
+  max-width: 700px;
+  padding: 45px 70px 45px 45px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border: 1px solid white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all .3s;
+}
+
+details + details {
+  margin-top: 20px;
+}
+
+details[open] {
+  min-height: 50px;
+  background-color: #f6f7f8;
+  box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+details p {
+  color: #96999d;
+  font-weight: 300;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+summary:focus {
+  outline: none;
+  
+}
+
+summary:focus::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+.control-icon {
+  fill: rgb(8, 255, 8);
+  transition: .3s ease;
+  pointer-events: none;
+}
+
+.control-icon-close {
+  display: none;
+}
+
+details[open] .control-icon-close {
+  display: initial;
+  transition: .3s ease;
+}
+
+details[open] .control-icon-expand {
+  display: none;
+}
+</style>
+</head>
+<body>
+  <!-- header -->
+  <header class = "header">
+    <div class = "head-top">
+      <a class = "brand-name">
+        <span>SWIFT</span>
+        select
+      </a>
+      <div>
+        
+        <span class = "head-icon">
+          <a style="text-decoration:none; color:#ffffff;"href="shop.html"><i class = "fas fa-home"></i></a>
+        </span>
+        <span class = "head-icon" title="Cart">
+          <a style="text-decoration:none; color:#ffffff;"href="#"><i class = "fa fa-shopping-cart" ></i></a>
+        </span>
+        <span class = "head-icon" title="Login">
+          <a style="text-decoration:none; color:#ffffff;"href="log.html"><i class = "fas fa-user-circle"></i></a>
+        </span>
+      </div>
+    </div>
+  <h2 style="color: #ffffff;">Frequently Asked Questions</h2>
+
+<div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol viewBox="0 0 24 24" id="expand-more">
+      <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="close">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
+    </symbol>
+  </svg>
+</div>
+
+<details open style="color:rgb(8, 255, 8) ;">
+  <summary>
+    Do we get a refund for the product if we are not satisfied ?
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p>Totally my friend if the refund claim is issued within 1-week of product delivery and the product is not damaged.</p>
+</details>
+
+<details style="color:rgb(8, 255, 8) ;">
+
+  <summary>
+    Can I get my delivery here?
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p>Yes.We proudly ship worldwide!Better yet, our tracked shipping is always free of charge,with no minimum shipping charges.We've 
+    shipped the products to more 200+ countries and we love adding more the list.
+  </p>
+</details>
+
+<details style="color:rgb(8, 255, 8) ;">
+  <summary>
+    Are there any restrictions?    
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p>Only your imagination my friend. Go forth!</p>
+</details>
+  </header>
+  <!-- footer -->
+  <footer class = "footer container">
+    <div class = "footer-item">
+      <h2 class = "brand-name">
+        <span>SWIFT</span>Select
+      </h2>
+      <p>social media accounts</p>
+      <ul class = "footer-icons">
+        <li>
+          <a href = "#"><i class = "fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href = "#"><i class = "fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href = "#"><i class = "fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href = "#"><i class = "fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href = "#"><i class = "fab fa-google-plus-g"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class = "footer-item">
+      <h3>links</h3>
+      <ul>
+        <li><a href = "shop.html">home</a></li>
+        
+        <li><a href = "shop.html" download="SwiftSelect">download</a></li>
+        <li><a href = "abus.html">about</a></li>
+      </ul>
+    </div>
+
+    <div class = "footer-item">
+      <h3>products</h3>
+      <ul>
+        <li><a href = "tech.html">Tech</a></li>
+        <li><a href = "#">Trendy</a></li>
+        <li><a href = "#">Classic</a></li>
+        
+      </ul>
+    </div>
+
+    <div class = "footer-item">
+      <h3>support</h3>
+      <ul>
+        <li><a href = "FAQ.html">FAQ</a></li>
+        
+        <li><a href = "#">features</a></li>
+        <li><a href = "contact.html">contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- end of footer -->
+
+</body>
+</html>
